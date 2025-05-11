@@ -33,6 +33,15 @@ const Skills = () => {
 
   let orbitDuration = 30;
 
+  const skillList = [
+    { name: 'HTML', score: '100%' },
+    { name: 'Redux', score: '85%' },
+    { name: 'Javascript', score: '90%' },
+    { name: 'React', score: '90%' },
+    { name: 'CSS', score: '80%' },
+    { name: 'Typescript', score: '70%' },
+  ];
+
   return (
     <div className=" mx-50 my-15 ">
       <div className="flex mb-4 text-4xl justify-center items-center">
@@ -130,8 +139,24 @@ const Skills = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex flex-col my-5 justify-evenly  w-[50%] h-[400px]">
-          <div className="my-3">
+        <div className="flex flex-col my-5 justify-evenly w-[50%] h-[400px]">
+          {skillList.map((skill) => (
+            <div className="my-3">
+              <div>
+                <div className="flex w-full justify-between gap-3 font-bold">
+                  <div>{skill.name}</div>
+                  <div>{skill.score}</div>
+                </div>
+              </div>
+              <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
+                <div
+                  className="animate-progress w-[{skill.score}] h-full rounded-full bg-amber-300"
+                  style={{ width: `${skill.score}` }}
+                ></div>
+              </div>
+            </div>
+          ))}
+          {/* <div className="my-3">
             <div>
               <div className="flex w-fulljustify-between gap-3 font-bold">
                 <div>HTML</div>
@@ -194,7 +219,7 @@ const Skills = () => {
             <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
               <div className="animate-progress w-[70%] h-full rounded-full bg-amber-300"></div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
