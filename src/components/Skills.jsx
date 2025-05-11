@@ -5,7 +5,7 @@ const Skills = () => {
   const orbit1 = [
     {
       name: 'HTML',
-      image: './src/assets/html5.png',
+      image: '/assets/html5.png',
     },
     {
       name: 'CSS',
