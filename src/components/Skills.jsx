@@ -9,25 +9,25 @@ const Skills = () => {
     },
     {
       name: 'CSS',
-      image: './src/assets/css3.png',
+      image: './assets/css3.png',
     },
     {
       name: 'JS',
-      image: './src/assets/js.png',
+      image: './assets/js.png',
     },
   ];
   const orbit2 = [
     {
       name: 'React',
-      image: './src/assets/react.png',
+      image: './assets/react.png',
     },
     {
       name: 'Redux',
-      image: './src/assets/redux.png',
+      image: './assets/redux.png',
     },
     {
       name: 'Typescript',
-      image: './src/assets/ts.png',
+      image: './assets/ts.png',
     },
   ];
 
