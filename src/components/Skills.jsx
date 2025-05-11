@@ -150,7 +150,7 @@ const Skills = () => {
               </div>
               <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
                 <div
-                  className="animate-progress w-[{skill.score}] h-full rounded-full bg-amber-300"
+                  className="animate-progress h-full rounded-full bg-amber-300"
                   style={{
                     '--target-width': skill.score,
                   }}
