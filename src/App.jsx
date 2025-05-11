@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectList from './components/ProjectList';
+import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navbar />
       <Hero />
       <ProjectList />
+      <Skills />
+      <Footer />
     </>
   );
 }

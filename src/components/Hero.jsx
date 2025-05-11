@@ -36,9 +36,9 @@ function Hero() {
           </div>
 
           <div className="flex items-center">
-            <button class="flex w-60 px-3 py-2 rounded-2xl justify-center items-center relative z-10 font-inherit text-white bg-black outline-none border-none overflow-hidden transition-all duration-500 ease-in-out hover:text-gray-800 group">
-              <span class="absolute inset-1/2 w-4 h-4 bg-gray-300 rounded-full transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-transform duration-500 ease-in-out group-hover:scale-[15] z-0"></span>
-              <span class="relative z-10">Lets Collaborate</span>
+            <button className="flex w-60 px-3 py-2 rounded-2xl justify-center items-center relative z-10 font-inherit text-white bg-black outline-none border-none overflow-hidden transition-all duration-500 ease-in-out hover:text-gray-800 group">
+              <span className="absolute inset-1/2 w-4 h-4 bg-gray-300 rounded-full transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-transform duration-500 ease-in-out group-hover:scale-[15] z-0"></span>
+              <span className="relative z-10">Lets Collaborate</span>
             </button>
           </div>
         </div>

@@ -35,7 +35,7 @@ const ProjectList = () => {
             image
           </div>
         </div>
-        <div className="flex flex-row gap-3 my-10 p-10 bg-[#f1f5f0] rounded-2xl">
+        <div className="flex flex-row gap-3 my-10 p-10 bg-[#f1f5f0] shadow-2xl rounded-2xl">
           <div className="flex flex-col w-[70%] justify-evenly ">
             <p className="flex w-40 mb-3 px-2 py-1 text-xs border-1 border-gray-900 rounded-2xl justify-center items-start">
               Website
