@@ -15,13 +15,15 @@ body {
   from {
     width: 0;
   }
+
   to {
-    width: 100%;
+    width: var(--target-width);
   }
 }
 
 .animate-progress {
   animation: progress 5s ease-out forwards;
+  width: 0;
 }
 
 @keyframes rotate-animation {
