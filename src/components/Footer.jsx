@@ -1,11 +1,20 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <div className="max-w-full flex mx-50 mb-5">
-      <div className="flex-1/2 justify-start items-center content-center">
-        <div className="flex mb-4 text-4xl ">My Core Skills</div>
-        <div className="flex text-sm text-gray-400">
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: 'easeIn' }}
+      viewport={{ once: true }}
+      className="flex flex-col lg:flex-row mx-5 md:mx-10 lg:mx-30 mt-5 mb-10 overflow-x-hidden "
+    >
+      <div className="flex-col lg:flex-1/2 justify-center lg:justify-start items-center content-center">
+        <div className="flex mb-4 text-4xl justify-center items-center lg:justify-start lg:items-start ">
+          Contact Me
+        </div>
+        <div className="flex mb-4 text-sm text-gray-400 md:justify-center md:items-center lg:justify-start lg:items-start">
           Feel free to drop a message for any inquiries or
           collaborations.
         </div>
@@ -33,7 +42,7 @@ const Footer = () => {
           </button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

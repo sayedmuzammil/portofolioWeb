@@ -43,7 +43,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className=" mx-50 my-15 ">
+    <div className=" mx-5 md:mx-10 lg:mx-30 my-15 overflow-hidden">
       <div className="flex mb-4 text-4xl justify-center items-center">
         My Core Skills
       </div>
@@ -51,11 +51,11 @@ const Skills = () => {
         An overview of the key technologies and frameworks I
         specialize in
       </div>
-      <div className="flex gap-3">
-        <div className=" w-[50%] my-3 ">
+      <div className="flex flex-col md:flex-col lg:flex-row gap-3 lg:gap-10 ">
+        <div className=" max-w-full lg:w-[50%] my-3 ">
           <div className="flex my-4 justify-center items-center">
             <motion.div
-              className="flex w-[400px] h-[400px] rounded-full justify-center "
+              className="flex w-[250px] md:w-[300px] lg:w-[400px] h-[250px] md:h-[300px] lg:h-[400px] rounded-full justify-center "
               style={{
                 border: '3px dashed rgba(0, 0, 0, 0.5)',
               }}
@@ -63,17 +63,9 @@ const Skills = () => {
               transition={{
                 repeat: Infinity,
                 duration: orbitDuration,
-
                 ease: 'linear',
               }}
             >
-              {/* test 1
-              <img
-                src="./src/assets/react.png"
-                className="w-[50px] h-[50px] mt-[-30px]"
-              /> 
-              */}
-
               {orbit2.map((skill, i) => (
                 <motion.div
                   key={skill.name}
@@ -90,7 +82,7 @@ const Skills = () => {
                   <img
                     src={skill.image}
                     alt={skill.name}
-                    className="w-[50px] h-[50px] ml-12 rotate-90"
+                    className="w-[30px] md:w-[40px] lg:w-[50px] h-[30px] md:h-[40px] lg:h-[50px] ml-[-10px]  md:ml-1 lg:ml-12 rotate-90"
                     style={{
                       animation:
                         'rotate-animation 10s infinite linear',
@@ -100,7 +92,7 @@ const Skills = () => {
               ))}
             </motion.div>
             <motion.div
-              className="flex absolute w-[250px] h-[250px] rounded-full justify-center"
+              className="flex absolute w-[100px] md:w-[150px] lg:w-[200px] h-[100px] md:h-[150px] lg:h-[200px] rounded-full justify-center"
               style={{
                 border: '3px dashed rgba(0, 0, 0, 0.5)',
               }}
@@ -128,7 +120,7 @@ const Skills = () => {
                   <img
                     src={skill.image}
                     alt={skill.name}
-                    className="w-[50px] h-[50px] ml-[-30px] rotate-90"
+                    className="w-[30px] md:w-[40px] lg:w-[50px] h-[30px] md:h-[40px] lg:h-[50px] ml-[-90px] md:ml-[-70px] lg:ml-[-50px] rotate-90"
                     style={{
                       animation:
                         'rotate-animation 10s infinite linear',
@@ -139,9 +131,9 @@ const Skills = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex flex-col my-5 justify-evenly w-[50%] h-[400px]">
+        <div className="flex flex-col my-5 justify-evenly max-w-full lg:w-[45%] h-auto">
           {skillList.map((skill) => (
-            <div className="my-3">
+            <div key={skill.name} className=" my-3">
               <div>
                 <div className="flex w-full justify-between gap-3 font-bold">
                   <div>{skill.name}</div>
@@ -158,70 +150,6 @@ const Skills = () => {
               </div>
             </div>
           ))}
-          {/* <div className="my-3">
-            <div>
-              <div className="flex w-fulljustify-between gap-3 font-bold">
-                <div>HTML</div>
-                <div>100%</div>
-              </div>
-            </div>
-            <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
-              <div className="animate-progress w-[100%] h-full rounded-full bg-amber-300"></div>
-            </div>
-          </div>
-          <div className="my-3">
-            <div>
-              <div className="flex w-full justify-between gap-3 font-bold">
-                <div>Redux</div>
-                <div>85%</div>
-              </div>
-            </div>
-            <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
-              <div className="animate-progress w-[85%] h-full rounded-full bg-amber-300"></div>
-            </div>
-          </div>
-          <div className="my-3">
-            <div className="flex w-full justify-between gap-3 font-bold">
-              <span>JavaScript</span>
-              <span>90%</span>
-            </div>
-            <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
-              <div className="animate-progress w-[90%] h-full rounded-full bg-amber-300"></div>
-            </div>
-          </div>
-          <div className="my-3">
-            <div>
-              <div className="flex w-full justify-between gap-3 font-bold">
-                <div>React</div>
-                <div>90%</div>
-              </div>
-            </div>
-            <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
-              <div className="animate-progress w-[90%] h-full rounded-full bg-amber-300"></div>
-            </div>
-          </div>
-          <div className="my-3">
-            <div>
-              <div className="flex w-full justify-between gap-3 font-bold">
-                <div>CSS</div>
-                <div>80%</div>
-              </div>
-            </div>
-            <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
-              <div className="animate-progress w-[80%] h-full rounded-full bg-amber-300"></div>
-            </div>
-          </div>
-          <div className="my-3">
-            <div>
-              <div className="flex w-full justify-between gap-3 font-bold">
-                <div>Typescript</div>
-                <div>70%</div>
-              </div>
-            </div>
-            <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
-              <div className="animate-progress w-[70%] h-full rounded-full bg-amber-300"></div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
