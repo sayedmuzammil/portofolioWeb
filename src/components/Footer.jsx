@@ -8,7 +8,7 @@ const Footer = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: 'easeIn' }}
       viewport={{ once: true }}
-      className="flex flex-col lg:flex-row mx-5 md:mx-10 lg:mx-30 mt-5 mb-10 overflow-x-hidden "
+      className="flex flex-col lg:flex-row mx-5 md:mx-10 lg:mx-30 mt-5 mb-10 overflow-hidden "
     >
       <div className="flex-col lg:flex-1/2 justify-center lg:justify-start items-center content-center">
         <div className="flex mb-4 text-4xl justify-center items-center lg:justify-start lg:items-start ">

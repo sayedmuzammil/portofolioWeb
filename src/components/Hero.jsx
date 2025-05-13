@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero() {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-hidden">
       <div className="flex flex-col md:flex-col lg:flex-row gap-2 md:gap-3 lg:gap-4 mx-5 md:mx-10 lg:mx-30 mt-20 ">
         <div className="flex max-w-full md:max-w-full lg:min-w-50 h-25 md:h-40 lg:h-100 border-1 rounded-2xl bg-gray-200 justify-center items-center">
           Photo

@@ -26,7 +26,7 @@ const projectList = [
 
 const ProjectList = () => {
   return (
-    <div className="flex flex-col mx-5 md:mx-10 lg:mx-30 mt-15 overflow-x-hidden ">
+    <div className="flex flex-col mx-5 md:mx-10 lg:mx-30 mt-15 overflow-hidden ">
       <div className="flex mb-4 text-4xl justify-center items-center">
         My Project Lists
       </div>
