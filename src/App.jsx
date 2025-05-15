@@ -13,7 +13,9 @@ function App() {
       <motion.div
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 10 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.4 }}
       >
         <Navbar />
         <Hero />

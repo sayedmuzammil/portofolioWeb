@@ -42,7 +42,7 @@ const ProjectList = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: 'easeIn' }}
             viewport={{ once: true }}
-            className="flex flex-col-reverse md:flex-row lg:flex-row gap-3 my-10 p-10 shadow-2xl rounded-2xl"
+            className="flex flex-col-reverse md:flex-row lg:flex-row gap-3 my-10 p-10 shadow-lg rounded-2xl"
             style={{ backgroundColor: project.backgroundColor }}
           >
             <div className="flex flex-col md:max-w-[60%] lg:max-w-[70%] justify-evenly ">

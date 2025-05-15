@@ -1,8 +1,9 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function Hero() {
   return (
-    <div className="overflow-hidden">
+    <div className="pb-5 bg-linear-to-t from-gray-100 to-white shadow-lg overflow-hidden">
       <div className="flex flex-col md:flex-col lg:flex-row gap-2 md:gap-3 lg:gap-4 mx-5 md:mx-10 lg:mx-30 mt-20 ">
         <div className="flex max-w-full md:max-w-full lg:min-w-50 h-25 md:h-40 lg:h-100 border-1 rounded-2xl bg-gray-200 justify-center items-center">
           Photo
@@ -16,7 +17,14 @@ function Hero() {
           <div className="flex flex-col h-full ">
             <div className="mt-5 mb-3 text-2xl md:text-3xl lg:text-4xl font-medium ">
               <div>Hi, I am Sayed!</div>
-              <div>Front End Developer</div>
+              <motion.div
+                initial={{ width: '0' }}
+                animate={{ width: '100%' }}
+                transition={{ duration: 5, ease: 'easeInOut' }}
+                className="overflow-hidden whitespace-nowrap"
+              >
+                Front End Developer
+              </motion.div>
             </div>
             <div className="my-3 text-2xl text-gray-400">
               Living in jakarta

@@ -43,7 +43,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className=" mx-5 md:mx-10 lg:mx-30 my-15 overflow-hidden">
+    <div className="max-w-full mx-5 md:mx-10 lg:mx-30 my-15 overflow-hidden">
       <div className="flex mb-4 text-4xl justify-center items-center">
         My Core Skills
       </div>
@@ -55,7 +55,7 @@ const Skills = () => {
         <div className=" max-w-full lg:w-[50%] my-3 ">
           <div className="flex my-4 justify-center items-center">
             <motion.div
-              className="flex w-[250px] md:w-[300px] lg:w-[400px] h-[250px] md:h-[300px] lg:h-[400px] rounded-full justify-center "
+              className="flex w-[15rem] md:w-[19rem] lg:w-[25rem] h-[15rem] md:h-[19rem] lg:h-[25rem] rounded-full justify-center "
               style={{
                 border: '3px dashed rgba(0, 0, 0, 0.5)',
               }}
@@ -82,7 +82,7 @@ const Skills = () => {
                   <img
                     src={skill.image}
                     alt={skill.name}
-                    className="w-[30px] md:w-[40px] lg:w-[50px] h-[30px] md:h-[40px] lg:h-[50px] ml-[-10px]  md:ml-1 lg:ml-12 rotate-90"
+                    className="w-[3rem] h-auto ml-[-2rem] md:ml-0 lg:ml-12 rotate-90"
                     style={{
                       animation:
                         'rotate-animation 10s infinite linear',
@@ -92,7 +92,7 @@ const Skills = () => {
               ))}
             </motion.div>
             <motion.div
-              className="flex absolute w-[100px] md:w-[150px] lg:w-[200px] h-[100px] md:h-[150px] lg:h-[200px] rounded-full justify-center"
+              className="flex absolute w-[6.5rem] md:w-[9rem] lg:w-[12rem] h-[6.5rem] md:h-[9rem] lg:h-[12rem] rounded-full justify-center"
               style={{
                 border: '3px dashed rgba(0, 0, 0, 0.5)',
               }}
@@ -120,7 +120,7 @@ const Skills = () => {
                   <img
                     src={skill.image}
                     alt={skill.name}
-                    className="w-[30px] md:w-[40px] lg:w-[50px] h-[30px] md:h-[40px] lg:h-[50px] ml-[-90px] md:ml-[-70px] lg:ml-[-50px] rotate-90"
+                    className="w-[3rem] h-auto ml-[-6rem] md:ml-[-5rem] lg:ml-[-3.5rem] rotate-90"
                     style={{
                       animation:
                         'rotate-animation 10s infinite linear',
@@ -140,7 +140,7 @@ const Skills = () => {
                   <div>{skill.score}</div>
                 </div>
               </div>
-              <div className="w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
+              <div className="max-w-full h-5 rounded-full bg-gray-100 overflow-hidden outline-1">
                 <div
                   className="animate-progress h-full rounded-full bg-amber-300"
                   style={{

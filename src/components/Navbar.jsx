@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="flex-no-wrap fixed top-0 z-10 flex w-full h-16 bg-white
+      className="flex-no-wrap fixed top-0 z-999 flex w-full h-16 bg-white
      border-b-2 border-gray-300  justify-center items-center "
     >
       <ul className="flex flex-row list-none gap-4 justify-center items-center">
